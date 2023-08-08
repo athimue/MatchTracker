@@ -2,8 +2,8 @@ package com.example.matchtracker.data.di
 
 import com.example.matchtracker.data.repository.FavoriteRepositoryImpl
 import com.example.matchtracker.data.repository.GameRepositoryImpl
-import com.example.matchtracker.domain.game.repo.FavoriteRepository
-import com.example.matchtracker.domain.game.repo.GameRepository
+import com.example.matchtracker.domain.game.repository.FavoriteRepository
+import com.example.matchtracker.domain.game.repository.GameRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

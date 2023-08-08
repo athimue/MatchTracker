@@ -5,7 +5,7 @@ import com.example.matchtracker.data.network.dto.*
 import com.example.matchtracker.domain.game.models.Game
 import com.example.matchtracker.domain.game.models.League
 import com.example.matchtracker.domain.game.models.Team
-import com.example.matchtracker.domain.game.repo.GameRepository
+import com.example.matchtracker.domain.game.repository.GameRepository
 import com.example.matchtracker.domain.game.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

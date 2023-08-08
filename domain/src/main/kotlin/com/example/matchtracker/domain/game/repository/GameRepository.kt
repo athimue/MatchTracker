@@ -1,4 +1,4 @@
-package com.example.matchtracker.domain.game.repo
+package com.example.matchtracker.domain.game.repository
 
 import com.example.matchtracker.domain.game.models.Game
 import com.example.matchtracker.domain.game.models.League

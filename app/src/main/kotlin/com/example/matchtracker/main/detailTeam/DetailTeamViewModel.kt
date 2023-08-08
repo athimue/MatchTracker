@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.matchtracker.domain.game.models.Favorite
 import com.example.matchtracker.domain.game.models.Team
-import com.example.matchtracker.domain.game.repo.FavoriteRepository
-import com.example.matchtracker.domain.game.repo.GameRepository
+import com.example.matchtracker.domain.game.repository.FavoriteRepository
+import com.example.matchtracker.domain.game.repository.GameRepository
 import com.example.matchtracker.domain.game.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
