@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.matchtracker.main.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_DetailMatchFragment"
+            app:destination="@id/fragment_detail_match" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_FavoritesFragment"
+            app:destination="@+id/fragment_favorites" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_SearchFragment"
+            app:destination="@+id/fragment_search" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_detail_match"
+        android:name="com.example.matchtracker.main.detailMatch.DetailMatchFragment"
+        android:label="@string/match_details"
+        tools:layout="@layout/fragment_detail_match">
+
+        <argument
+            android:name="gameUiModel"
+            app:argType="com.example.matchtracker.main.detailMatch.DetailMatchUiModel" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_favorites"
+        android:name="com.example.matchtracker.main.favorites.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorites">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.example.matchtracker.main.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_SearchFragment_to_DetailTeamFragment"
+            app:destination="@id/fragment_detail_team" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_detail_team"
+        android:name="com.example.matchtracker.main.detailTeam.DetailTeamFragment"
+        android:label="Team details"
+        tools:layout="@layout/fragment_detail_team">
+
+        <argument
+            android:name="team"
+            app:argType="com.example.matchtracker.domain.game.models.Team" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_leagues"
+        android:name="com.example.matchtracker.main.leagues.LeaguesFragment"
+        android:label="Leagues"
+        tools:layout="@layout/fragment_leagues" />
+
+</navigation>

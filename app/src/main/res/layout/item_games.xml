@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="firstTeam"
+            type="String" />
+
+        <variable
+            name="secondTeam"
+            type="String" />
+
+        <variable
+            name="date"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/first_team_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/first_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{firstTeam}"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@id/first_team_logo"
+            app:layout_constraintStart_toEndOf="@id/first_team_logo" />
+
+        <ImageView
+            android:id="@+id/second_team_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/first_team_logo"
+            app:layout_constraintStart_toStartOf="@+id/first_team_logo"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/second_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@{secondTeam}"
+            app:layout_constraintTop_toTopOf="@id/second_team_logo"
+            app:layout_constraintStart_toEndOf="@id/second_team_logo" />
+
+        <TextView
+            android:id="@+id/date_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{date}"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/separator_view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_team_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
