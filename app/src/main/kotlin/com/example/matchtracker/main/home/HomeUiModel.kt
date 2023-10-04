@@ -5,7 +5,7 @@ import com.example.matchtracker.domain.game.models.Game
 
 class HomeUiModel : BaseObservable() {
 
-    var hasChanged: Boolean = false
+    private var hasChanged: Boolean = false
 
     var selectedDate: String = "2023-09-23"
         set(value) {

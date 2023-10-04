@@ -4,7 +4,7 @@ import com.example.matchtracker.data.database.dao.FavoriteDao
 import com.example.matchtracker.data.database.entity.FavoriteEntity
 import com.example.matchtracker.data.database.entity.toFavoriteEntity
 import com.example.matchtracker.domain.game.models.Favorite
-import com.example.matchtracker.domain.game.repo.FavoriteRepository
+import com.example.matchtracker.domain.game.repository.FavoriteRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

@@ -2,7 +2,7 @@ package com.example.matchtracker.main.search
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.matchtracker.domain.game.repo.GameRepository
+import com.example.matchtracker.domain.game.repository.GameRepository
 import com.example.matchtracker.domain.game.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

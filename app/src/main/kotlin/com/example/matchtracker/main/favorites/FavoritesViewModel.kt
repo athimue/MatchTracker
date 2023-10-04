@@ -2,7 +2,7 @@ package com.example.matchtracker.main.favorites
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.matchtracker.domain.game.repo.FavoriteRepository
+import com.example.matchtracker.domain.game.repository.FavoriteRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

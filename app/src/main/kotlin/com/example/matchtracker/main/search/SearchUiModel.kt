@@ -5,7 +5,7 @@ import com.example.matchtracker.domain.game.models.Team
 
 class SearchUiModel : BaseObservable() {
 
-    var hasChanged: Boolean = false
+    private var hasChanged: Boolean = false
 
     var teams = listOf<Team>()
         set(value) {
