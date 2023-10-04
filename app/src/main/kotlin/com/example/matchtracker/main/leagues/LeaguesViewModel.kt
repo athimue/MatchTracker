@@ -22,17 +22,14 @@ open class LeaguesViewModel @Inject constructor(
             gameRepository.getLeagues().collect {
                 when (it) {
                     is Resource.Loading -> {
-                        Log.d("COUCOU", "Loading")
                         leaguesUiModel.leagues = listOf()
                     }
                     is Resource.Error -> {
-                        Log.d("COUCOU", "Error")
                         leaguesUiModel.leagues = listOf()
                         cancel()
                     }
                     is Resource.Success -> {
                         leaguesUiModel.leagues = it.data
-                        Log.d("COUCOU", it.data.toString())
                         cancel()
                     }
                 }

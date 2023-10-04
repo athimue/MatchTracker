@@ -9,4 +9,4 @@ import kotlinx.serialization.SerialName
 data class DetailMatchUiModel(
     @SerialName("game")
     val game: Game,
-) : Parcelable {}
+) : Parcelable

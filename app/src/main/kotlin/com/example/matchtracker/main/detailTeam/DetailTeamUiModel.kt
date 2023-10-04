@@ -10,7 +10,7 @@ class DetailTeamUiModel(
     isFavorite: Boolean
 ) : BaseObservable() {
 
-    var hasChanged: Boolean = false
+    private var hasChanged: Boolean = false
 
     var isFavorite: Boolean = isFavorite
         set(value) {
